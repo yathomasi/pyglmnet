@@ -7,4 +7,4 @@ pytest-cov
 coverage
 flake8
 pydocstyle
-twine
+twine>=2.0.0
