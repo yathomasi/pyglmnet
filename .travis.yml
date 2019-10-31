@@ -15,10 +15,7 @@ install:
     - conda create -n testenv --yes pip python=$PYTHON
     - source activate testenv
     - conda install --yes --file requirements.txt
-    - if [ $PYTHON == 3.5 ];
-      then pip install twine==1.15.0;
-      else conda install --yes twine;
-      fi
+    - pip install --upgrade twine
     - python setup.py develop
     - python setup.py sdist bdist_wheel
 
